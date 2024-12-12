@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0px;
+            }
+            .top{
+                width: 100%;
+                height: 15%;
+                background-color: black;
+            }
+            .t1{
+                width: 34%;
+                height: 15%;
+                background-color: black;
+
+            }
+            .t2{
+                width: 34%;
+                height: 15%;
+                background-color: black;
+ 
+            }
+            .t3{
+                width: 33%;
+                height: 15%;
+                background-color: black;
+
+            }
+            h1{
+                color: white;
+                text-align: center;
+                text-transform: uppercase;
+                
+                margin-left: 800px;
+                
+            }
+            p{
+                color: white;
+                text-align: right;
+                margin-left: 1500px;
+            }
+            .bottom{
+                width: 100%;
+                height: 85%;
+                background-color: rgb(18, 124, 218);
+                display: flex;
+                align-items: space-evenly;
+                justify-content: space-evenly;
+            }
+            .one{
+                width:34%;
+                height: 100%;
+                background-color:greenyellow;
+                text-align: center;
+            }
+            .two{
+                width:34%;
+                height: 100%;
+                background-color:bisque;
+                text-align: center;
+            }
+            .three{
+                width:33%;
+                height: 100%;
+                background-color: aqua;
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+                text-transform: capitalize;
+               
+            }
+            label{
+                text-transform: capitalize;
+                font-size: larger;
+                font-weight: bolder;
+            }
+            input{
+                width: 200px;
+                height: 40px;
+                border-radius: 10px;
+            }
+            button{
+                margin-top: 15px;
+                width: 90px;
+                height: 30px;
+            }
+            .btn1{
+                background-color: green;
+                border-radius: 8px;
+                color: white;
+                font-size: large;
+                font-weight: 600;
+
+            }
+            .btn2{
+                background-color: red;
+                border-radius: 8px;
+                color:white;
+                font-size: large;
+                font-weight: 600;
+            }
+            H3{
+                margin-top: 25px;
+                text-transform: capitalize;
+                font-size: large;
+                
+            }
+
+        </style>
+        <script>
+            //counter
+
+            var count=0;
+            var interval=0;
+             function counterstart  (){
+                interval=setInterval(function(){
+                    count++;
+                    document.getElementById("result1").innerText=count;
+                    var n=document.getElementById("input1").valueAsNumber;
+                    if(count>=n){
+                        clearInterval(interval);
+                    }
+                },1000);
+             }
+             function counterstop(){
+                clearInterval(interval);
+             }
+             
+
+             function timer(){
+
+             }
+
+             function countdown(){
+                
+             }
+
+        </script>
+    </head>
+    <body onload="Date()">
+
+        <div class="top">
+           <div class="t1"></div>
+           <div class="t2">
+            <h1>clock</h1>
+           </div>
+           <div class="t3">
+            <p id="date">date</p>
+           </div>
+        </div>
+        <div class="bottom">
+
+            <div class="one">
+                <h2>counter</h2><br>
+                <label for="">upto</label>
+                <input id="input1" type="number">
+                <label for="">sec</label><br>
+                <button class="btn1" onclick="start()">start</button>
+                <button class="btn2" onclick="stop()">stop</button>
+                <h3 id="result1">result</h3>
+            </div>
+
+            <div class="two">
+                <h2>timer</h2><br>
+                <label for="">upto</label>
+                <input id="upto"  type="number">
+                <label for="">sec</label><br>
+                <button class="btn1" onclick="start()">start</button>
+                <button class="btn2" onclick="stop()">stop</button>
+                <h3 id="result">result</h3>
+
+            </div>
+            <div class="three">
+                <h2>countdown</h2><br>
+                <label for="">from</label>
+                <input id="from"  type="text">
+                <label for="">sec</label><br>
+                <button class="btn1" onclick="start()">start</button>
+                <button class="btn2" onclick="stop()">stop</button>
+                <h3 id="result">result</h3>
+
+            </div>
+        </div>
+    </body>
+</html>

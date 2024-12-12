@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <style>
+
+        </style>
+        <script>
+            var salaries = [1000000,1200000,1100000,1400000,1300000];
+            console.log(salaries);
+
+            // apply 30% hike for every empolyes
+
+            salaries1=salaries.map(salary=>salary+(salary*0.3));
+            console.log(salaries1);
+
+            //add 5% cuttings on every salary
+
+            salaries2=salaries.map(salary=>salary-(salary*0.05));
+            console.log(salaries2);
+
+            //select only salaries below 16lakhs 
+
+            salaries3=salaries.filter(salary=>salary<1600000);
+            console.log(salaries3);
+
+            //arrange salaries in descending order
+
+            salaries.sort((salary1,salary2)=>salary2-salary1);
+            console.log(salaries);
+
+            //arrange salaries in ascending order
+            
+            salaries.sort((salary1,salary2)=>salary1-salary2);
+            console.log(salaries);
+            
+            //calculate the total salary ependiture for a company
+
+            var total = salaries.reduce((sum,salary)=>sum+salary) ;
+            console.log(total);
+
+            //print the salaries array
+
+            var salaries = [1000000,1200000,1100000,1400000,1300000];
+            console.log("total salaries:" , salaries);
+            console.log(salaries);
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <style>
+            #one{
+                color: red;   /* id=name # */
+            }
+            .two{
+                color: green ;    /* class=name . dot  */
+            }
+            h3{
+                color: blue;     /* any tag elements html */
+            }
+            *{
+                /* border: 0px solid gold;     universal * selectors applies total page what ever property we hav given */
+            }
+
+            /*pseduo class selectors*/
+
+            button{
+                background-color: crimson;
+            }
+            button:hover{
+                background-color: black;     /*submit blink */
+            }
+            input:focus{
+                background-color: darkmagenta;     /*space or area will be with color highlight */
+            }
+            input:focus{
+                background-color: aqua;
+            }
+
+            /*pseduo elements selectors*/
+
+            p::first-line{
+                background-color: tomato;
+                color: green;
+            }
+            p::first-letter{
+                background-color: gold;
+                color: blue;
+            }
+            label::after{
+                content: ":";
+                color: brown;
+            }
+            label::before{
+                content:"enter your name" ;
+                color: gold;
+            }
+
+            /*attribute selectors*/
+
+            input[type="name"]{
+                background-color: red;
+            }
+            input[type="name"]{
+                background-color: green;
+            }
+
+            /*combitators selectors*/
+            div h6{
+                color: red;
+            }
+            div >h6{
+                color: green;
+            }
+
+ 
+
+            
+
+        </style>
+        
+    </head>
+    <body>
+        <h1 id="one">hello css</h1>   <!--unique id only one name--->
+        <h2 class="two"> hi html</h2>   <!--class=name  . dot  any class-->
+        <h3> selectors topics</h3>      <!--tag elements any general-->
+        <br>
+        <br>
+
+        <button>submit</button>
+        <input type="text">
+        <br><br>
+        <br>
+
+        <p>Yesterday evening, at Manhattan’s New School, the New Yorker staff writer Elizabeth Kolbert delivered the second annual Jonathan Schell Memorial Lecture on the Fate of the Earth, an event established by the Nation Institute in honor of the late Jonathan Schell, a longtime New Yorker staff writer, and named for “The Fate of the Earth,” a series of articles that Schell wrote for the magazine in 1982 and later published as a book. Kolbert’s remarks have been edited for length.</p>
+
+        <br>
+        <br>
+
+        <form action=""></form>
+
+
+            <label for="">name</label>
+            <input type="text">
+            <br>
+
+            <label for="">age</label>
+            <input type="text">
+            <br>
+
+            <label for="">phone</label>
+            <input type="text">
+            <br>
+
+            <label for="">email</label>
+            <input type="text">
+            <br>
+
+            <label for="">name</label>
+            <input type="text">
+            <br>
+
+            <label for="">age</label>
+            <input type="number">
+            <br>
+
+            <label for="">phone</label>
+            <input type="number">
+            <br>
+
+            <label for="">email</label>
+            <input type="email">
+            <br>
+            <br>
+            <br>
+            <h4>one</h4>
+            <h4>two</h4>
+            <div>
+                <h4>three</h4>
+                <h4>four</h4>
+                <span>
+                    <h4>five</h4>
+                    <h4>six</h4>
+                </span>
+                <h4>seven</h4>
+                <h4>eight</h4>
+            </div>
+            <h4>nine</h4>
+            <h4>ten</h4>
+
+    </body>
+</html>

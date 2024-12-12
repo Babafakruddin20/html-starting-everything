@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+
+
+        .parent {
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        }
+
+        .child1 {
+            width: 50%;
+            height: 100%;
+            /* background-color: brown; */
+            background-image: url("nature.jfif");
+            background-size: cover;
+        }
+
+        .child2 {
+            width: 50%;
+            height: 100%;
+            /* background-color:white; */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            /* text-align: center; */
+        }
+
+        form {
+            width: 300px;
+            height: 300px;
+            /* padding: 0px; */
+            /* font-weight: 00px; */
+            margin-bottom: 12px;
+            margin: 120px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 0px;
+            background-color: rgb(16, 238, 16);
+            font-weight: 900;
+            text-transform: uppercase;
+            border: 0px;
+        }
+
+        a {
+            color: red;
+            /* word-spacing:80px; */
+            text-transform: capitalize;
+        }
+
+        input {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid greenyellow;
+            padding: 10px;
+            /* font-size: larger; */
+            font-weight: 900;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: medium;
+        }
+
+        p {
+            font-size: larger;
+            /* font-style: normal; */
+            text-transform: capitalize;
+            /* word-spacing: 80%; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2">
+            <form action="">
+                <h2>account login</h2>
+                <input type="text" placeholder="user name">
+                <input type="text" placeholder="password">
+
+
+                <br>
+
+                <button>sign in</button>
+                <p>forgot <a rhef="">username/password?</a></p>
+            </form>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

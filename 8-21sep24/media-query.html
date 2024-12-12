@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            body{                             /*--all pages--  always-*/
+                border: 20px solid green;
+                margin: 0;
+                padding: 20px;
+            }
+            @media(max-width:600px){                      /*------mobiles--in below 600px width screens----*/
+                body{
+                    background-color: red;
+                }
+                button{                     /*-----this is ui duty -----to hide a specify button like in mobiles or laptops*/
+                    display: none;
+                }
+            }
+            @media(min-width:600px){                     /*------desktop/laptops--- in above 600px width screens--*/
+                body{
+                    background-color: blue;
+                }
+            }
+            @media (max-width:1000px) and (orientation:landscape){    /*-----to target a specify mobiles---browsers inspect dimenisions--*/
+                body{
+                    background-color: orangered;
+                }
+            }
+                
+            
+
+        </style>
+    </head>
+        <body>
+
+            <h1>media queries</h1>
+
+            <button>submit</button>
+            
+        </body>
+</html>

@@ -1,0 +1,62 @@
+java script: useful to apply functionality to static web page
+
+
+functionalities:
+
+    storage
+    iterative loading
+    conditional loading 
+    api integration
+    async
+    dom changes
+
+concepts:
+   1. varaibles
+    2.datatypes
+    3.operators
+    4.arrays
+    5.objects
+
+
+    6.loops
+    7.if/else
+    8.functions 
+
+
+    9.async
+    10.dom changes
+
+    1.variable: container to store the data 
+                    create: var age=20;
+                    print: console.log(age);
+
+    2. datatypes:
+
+            1.number: 20, -20, 10.5, -10.5
+            2.string: "abc" , 'abc' ,'a' , "a"
+
+            3. boolean: true, false
+
+            4. undefined: no value
+
+             5.object:
+
+    3. operators:
+            1.arithmatic operators: +   -   *  /  %
+            2.comparision operators: < > <= >+ !=  ==   ===
+                    => output always booiean value
+                    =>  == compares value
+                    => === compares value and data type
+
+
+
+            3.logical operators:  &&   ||    !
+
+            4. ternary operator:    /   :   ;
+                        condition ? true block : false block;  /     variablename = (condition) ? value1:value2 
+                        
+                
+
+
+
+

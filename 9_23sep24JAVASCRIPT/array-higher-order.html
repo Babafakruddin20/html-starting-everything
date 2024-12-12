@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <script>
+            var prices = [200, 100, 300, 400, 500];
+            console.log(prices);
+
+            // 1.  map
+            // add 20rs delivery charges
+            prices = prices.map(price=>price+20);
+            console.log(prices);
+
+            //give discount 10rs
+
+            prices = prices.map(price=>price-10);
+            console.log(prices);
+
+            // 2.  filter 450 lessthan values is condition
+
+            prices = prices.filter(price=>price<450);
+            console.log(prices);
+
+            //sort ascending & descending  compare two numbers by default -  like price2-price1  descen
+           // prices.sort((price2 , price1)=> price2-price1) by default-------------ascend price1-price2
+           // no need equal to = in sort
+
+            prices.sort((a,b)=>a-b);          //ascending order
+            console.log(prices);
+
+            prices.sort((a,b)=>b-a);          //descending order
+            console.log(prices);
+
+            // 3.  reduce sum starts from 0 and cycle rotates upto final sum
+
+            var total = prices.reduce((sum, price)=>sum+price);
+            console.log("total price:" , total);
+
+            //============array of objects==============
+            var products = [
+                {name:'pen',price:10},
+                {name:'phone',price:20000},
+                {name:'laptop',price:50000},
+                {name:'shirt',price:2000}
+            ]
+
+
+
+            //map
+            //products = products.map(product=>product.price+20);
+
+            products = products.map(product=>{
+                product.price = product.price+20;
+                return product;
+
+            });
+            console.log(products);
+
+            //filter
+
+            products = products.filter(product=>product.price<40000);
+            console.log(products);
+
+
+            //sort
+            products.sort((a,b)=>a.price-b.price);
+            console.log(products);
+
+            //reduce
+                //0 is taken for intial value fromwhere to start
+            var carTotal = products.reduce((sum,product)=>sum+product.price,0);
+            console.log(carTotal);
+
+
+        </script>
+    </head>
+    <body>
+        <h1>higher order functions</h1>
+    </body>
+</html>

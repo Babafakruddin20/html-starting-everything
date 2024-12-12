@@ -1,0 +1,58 @@
+<html>
+    <head>
+    <script>
+        //general
+        //create
+        var user = {
+            name : 'abc',
+            age : 20,
+            id : 22,
+            money : 23
+        }
+
+        //select
+        console.log(user);
+        console.log(user.id);
+
+        //insert
+        user.phone = 9494;
+        console.log(user);
+
+        //update
+        user.age = 21;
+        console.log(user);
+
+        //delete
+
+        delete user.money;
+        console.log(user);
+
+
+        //advance objects
+
+        //nested object  objects . dot use {}   and arrays []  indexuse it
+
+        var student = {
+            name: 'abc',
+            age: 25,
+            isindian: true,
+            phones:[ 9494,8500],
+            address:{
+                hno: 234,
+                city:'hyd',
+                pin: 500090
+            }
+        }
+        //print 8500
+        console.log( student.phones[1]);
+
+        //print hyd
+        console.log(student.address.city);
+
+        
+    </script>
+    </head>
+    <body>
+        <h1>objects</h1>
+    </body>
+</html>

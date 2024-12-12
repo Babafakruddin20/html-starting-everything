@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <script>
+            function area(){
+                //read
+                var radius=document.getElementById('radius').valueAsNumber;
+                
+
+                //write
+                document.getElementById('result').innerText = 3.14*radius*radius;
+
+
+            }
+            function perimeter(){
+                //read
+                var radius=document.getElementById('radius').valueAsNumber;
+
+                //write
+                document.getElementById('result').innerText = 2*3.14*radius
+            }
+
+            
+
+        </script>
+
+        <style>
+            body{
+                margin: 0;
+            }
+            .parent{
+
+                
+                height: 100vh;
+                width: 100vw;
+                background-color: rgb(7, 7, 87);
+            }
+            .child{
+                border-radius: 10px;
+                position: relative;
+                top: 250px;
+                left: 700px;
+                height:300px;
+                width: 250px;
+                background-color: white;
+                text-align: center;
+                line-height: 50px;
+            }
+            h1{margin-left: 10%;
+                width: 80%;
+                position: relative;
+                border-radius: 10px;
+                bottom: 20px;
+                background-color:rgb(224, 45, 224);
+            }
+            button{
+                width: 80px;
+                height: 30px;
+                color: white;
+                background-color: rgb(77, 18, 133);
+            }
+            label{
+                font-size: 30px;
+                position: relative;
+                top: -30px;
+            }
+            input{
+                border-radius: 8px;
+                position: relative;
+                top: -20px;
+                width: 180px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+        <div class="child">
+                
+            <h1>circle</h1>
+            <label for="">radius</label><br>
+            <input id="radius" type="number"><br>
+            <button onclick="area()">area</button>
+            <button onclick="perimeter()">perimeter</button>
+            <h2 id="result">result</h2>
+
+        </div>
+        </div>
+    </body>
+</html>

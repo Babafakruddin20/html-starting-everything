@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input id="name" type="text" value="abc">
+         
+        <button onclick="submit()">submit</button>
+
+        <h1 id="result">result</h1>
+
+        <script>
+            //read
+            var name = document.getElementById("name").valueAsNumber;
+            console.log(name);
+
+            //write
+            document.getElementById("result").innerText="hello";
+
+            //event
+            function submit(){
+                alert("submitted succesfully!!!!");
+            }
+
+        </script>
+    </body>
+</html>

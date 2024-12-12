@@ -1,0 +1,296 @@
+<html>
+    <head>
+        
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            /*-----simple selectors------*/
+            #one{
+                color: green;  /*------unquie id only one-------*/
+            }
+            .blue{
+                color: blue;     /*-------class-------*/
+            }
+            h2{
+                color: red;
+            }
+            *{
+                border:opx solid red;  
+            }
+
+            /*----pseudo class selectors----*/
+
+            button{
+                background-color: blue;
+            }
+            button:hover{
+                background-color: greenyellow;
+            }
+            input:focus{
+                background-color: yellow;
+            }
+            input:hover{
+                background-color: gray;
+            }
+            /*-------pseduo selector elements-----*/
+            p::first-line{
+                color: red;
+            }
+            p::first-letter{
+                font-size: 50px;
+                color: green;
+            }
+            label::after{
+                content: ":";
+                color: blue;
+                
+            }
+            label::before{
+                content: "enter your";
+                color: gold;
+            }
+
+            /*-------attribute selectors-----*/
+
+            input[type="name"]{
+                background-color: yellow;
+            }
+
+            input[ type="number"]{
+                background-color: aquamarine;
+            }
+            /* combitator selectors*/
+            div h6{                      /*descentdant (space)*/
+                color: blueviolet;
+            }
+            div >h6{            /*child selector(>)*/
+                color: red;
+            }
+            div~h6{                 /*general sibling(~)*/
+                color: green;
+            }
+            div+h6{                  /*adjacent selector(+)*/
+                color: chartreuse;
+            }
+            .square{                            /*-------interview question-------*/
+                width: 200px;
+                height:200px ;
+                background-color:blue;
+            }
+            .square:hover{
+                border-radius: 50%;
+                background-color: red;
+            }
+            input:focus{
+                border: 2px solid blue;
+                outline: 2px solid red;
+            }
+            tr:nth-child(odd){
+                background-color: chartreuse;
+            }
+            tr:nth-child(even){
+                background-color: chocolate;
+            }
+            tbody tr:nth-child(odd){
+                background-color: blue;
+            }
+            tbody tr:nth-child(even){
+                background-color: red;
+            }
+
+
+
+            /*  icons */
+            .icon{
+                color: green;
+                font-size: 100px;
+            }
+            .icon{
+                color: red;
+                font: size 100px; ;
+            }
+
+
+
+            /* google example */
+            .g{
+                font-size: 100px;
+                color:blue;
+                font-weight: 900;
+            }
+            .o{
+                font-size: 100px;
+                color:brown;
+                font-weight: 900;
+            }
+            .o{
+                font-size: 100px;
+                color:greenyellow;
+                font-weight: 900;
+            }
+            .g{
+                font-size: 100px;
+                color: purple;
+                font-weight: 900;
+
+            }
+            .l{
+                font-size: 100px; 
+                color: magenta;
+                font-weight: 900;
+            }
+            .e{
+                font-size: 100px;
+                color: black;
+                font-weight: 900;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+
+        <h1>
+            <span class="g">G</span>
+            <span class="o">O</span>
+            <span class="o">O</span>
+            <span class="g">G</span>
+            <span class="l">L</span>
+            <span class="e">E</span>
+
+        </h1>
+
+
+        <h1 id="one">hello</h1>
+        
+        <h1 class="blue">css</h1>    
+        <h2>hello</h2>
+        <h2>selectors</h2>
+
+        <button>submit</button>
+        <input type="text">
+
+
+        <p>A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragra…Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). </p>
+
+        <form action="">
+
+
+            <label for="">name</label>
+            <input type="text">
+            <br>
+
+            <label for="">age</label>
+            <input type="text">
+            <br>
+
+            <label for="">phone</label>
+            <input type="text">
+            <br>
+
+            <label for="">email</label>
+            <input type="text">
+            <br>
+
+            <label for="">name</label>
+            <input type="text">
+            <br>
+
+            <label for="">age</label>
+            <input type="number">
+            <br>
+
+            <label for="">phone</label>
+            <input type="number">
+            <br>
+
+            <label for="">email</label>
+            <input type="email">
+            <br>
+
+
+            <h6>one</h6>
+            <h6>two</h6>
+            <div>
+                <h6>three</h6>
+                <h6>four</h6>
+                <span>
+                    <h6>five</h6>
+                    <h6>six</h6>
+
+                </span>
+                <h6>seven</h6>
+                <h6>eight</h6>
+            </div>
+            <h6>nine</h6>
+            <h6>ten</h6>
+            <br>
+            <br>
+            <!--question-->
+
+            <div class="square"></div>
+            <br>
+
+            <!---question-->
+            <input type="text">
+            <br>
+            <br>
+
+            <!----question 3-->
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>subject</th>
+                        <th>maRKS</th>
+                    </tr>
+    
+                </thead>
+                <tbody>
+                    <!-------in tables the row/col will be for two or more cell(like a single person data) then we have to use rowspan/colspan-->
+                    <tr>
+                        <td>john</td>
+                        <td>maths</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>david</td>
+                        <td>physics</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>smith</td>
+                        <td>social</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>total</td>
+                        <td>marks</td>
+                        <td>270</td>
+                    </tr>
+    
+                </tbody>
+            </table>
+    
+
+
+            <i class="fa-solid fa-house icon"></i>
+
+            
+
+            <i class="fa-solid fa-trash icon"></i>
+
+            <i class="fa-brands fa-facebook icon"></i>
+            
+
+
+
+
+        </form>
+
+
+    </body>
+</html>

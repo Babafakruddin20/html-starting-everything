@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <tite> TABLES</tite>
+
+    </head>
+    <body>
+        <!--heading h1 to h6-->
+        <h1>Tables</h1>
+
+        <!------in tables border attribute is imp(border="0/1/2/3"3tc.,)-->
+        <table border="1">
+            <!------table heading like rollno/student/attendace/marks/grade/rank we call(thead/th)-->
+            <thead>
+
+                <!------first we writte table row headings tr/th-->
+                <tr>
+                    <th>name </th>
+                    <th>age</th>
+                    <th>addr</th>    
+                
+                </tr>
+
+            </thead>
+
+            <!------table coloumns/division/data/cells-----tr/td-->
+            <tr>
+                <td>a</td>
+                <td>10</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td>20</td>
+                <td>y</td>
+                
+                </td>
+            </tr>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <br>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>phone</th>
+                    <th>city</th>
+                
+                </tr>
+            </thead>
+            <tdody>
+                <tr>
+                    <td>a</td>
+                    <td>123</td>
+                    <td>hyd</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>234</td>
+                    <td>bng</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td>345</td>
+                    <td>tn</td>
+                </tr>
+            </tdody>
+        </table>
+
+        <br>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>subject</th>
+                    <th>maths</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <!-------in tables the row/col will be for two or more cell(like a single person data) then we have to use rowspan/colspan-->
+                <tr>
+                    <td rowspan="3">john</td>
+                    <td>maths</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>physics</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>social</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td colspan="2">total</td>
+                    <td>270</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <br>
+
+        <!------in tables the space between charatecrs/letters & cellwe use cellpadding  and  the space b/w cells we use cellpadding-------->
+        
+        <table border="1" cellspacing="0" cellpadding="8">
+            <thead>
+                <th>name</th>
+                <th>subject</th>
+                <th>type</th>
+                <th>marks</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">david</td>
+                    <td rowspan="2">physics</td>
+                    <td>theory</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>practical</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">chemistry</td>
+                    <td>theory</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>practical</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td colspan="3">total</td>
+                    <td>180</td>
+                </tr>
+
+            </tbody>
+        </table>
+    
+    </body>
+</html>

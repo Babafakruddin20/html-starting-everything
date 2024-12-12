@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: o;
+            }
+            .parent{
+                width: 100vw;
+                height: 100vh;
+                background-color: aqua;
+            }
+            .top{
+                width:100%;
+                height: 10%;
+                background-color:skyblue;
+                text-align: center;
+                text-transform: capitalize;
+            }
+            .bottom{
+                width: 100%;
+                height: 90%;
+                background-color: brown;
+                display: flex;
+                justify-content: space-evenly;
+                align-items:space-evenly;
+            }
+            .one{
+                width: 25%;
+                height: 100%;
+                background-color: blueviolet;
+                text-align: center;
+                text-transform: capitalize;
+            }
+            .two{
+                width: 25%;
+                height: 100%;
+                background-color:coral;
+                text-align: center;
+                text-transform: capitalize;
+                
+            }
+            .three{
+                width: 25%;
+                height: 100%;
+                background-color: pink;
+                text-align: center;
+                text-transform: capitalize;
+
+            }
+            .four{
+                width: 25%;
+                height: 100%;
+                background-color: greenyellow;
+                text-align: center;
+                text-transform: capitalize;
+            }
+            label{
+                text-transform: capitalize;
+            }
+            button{
+                text-transform: capitalize;
+            }
+
+            </style>   
+            <script>
+                function calculate(){
+                    var age = document.getElementById("age").valueAsNumber;
+                    document.getElementById("result1").innerText = age>=18 ? 'major' : 'minor';
+                }
+                function check1(){
+                    var marks=document.getElementById("marks").valueAsNumber;
+                    document.getElementById("result2").innerText=marks>=36 ? "pass"  :  "fail";
+                }
+                function check2(){
+                    var number = document.getElementById("number").valueAsNumber;
+                    document.getElementById("result3").innerText=number%2==0 ? "even" : "odd";
+                }
+                function check3(){
+                    var ch = document.getElementById("ch").valueAsNumber;
+                    document.getElementById("result4").innerText= ch=='a' || ch=='A' || ch=='e' || ch=="E" || ch=="i" || ch=="I" || ch=="o" || ch=="O" || ch=="u" || ch=="U" ? "vowel" : "consonant";
+                }
+
+
+            </script>
+
+           
+    </head>
+        <body>
+            <div class="parent">
+                
+                <div class="top">
+                    <h1>my apps</h1><br>
+                    
+
+                </div>
+                <div class="bottom">
+                    <div class="one">
+                        <h2>major/minor check</h2><br>
+                        <label for="">age</label>
+                        <input id="age" type="number"><br>
+                        <button onclick = "calculate()">calculate</button><br>
+                        <h3 id="result1">result</h3>
+                    </div>
+                    <div class="two">
+                        <h2>pass/fail check</h2><br>
+                        <label for="">marks</label>
+                        <input id="marks" type="number"><br>
+                        <button onclick="check1()">check</button><br>
+                        <h3 id="result2">result</h3>
+                    </div>
+                    <div class="three">
+                        <h2>even/odd check</h2>br
+                        <label for="">number</label>
+                        <input id="number" type="number"><br>
+                        <button onclick="check2()">check</button><br>
+                        <h3 id="result3">result</h3>
+                    </div>
+                    <div class="four">
+                        <h2>vowel/consonant check</h2><br>
+                        <label for="">alphabet</label>
+                        <input id="ch" type="text"><br>
+                        <button onclick="check3()">check</button><br>
+                        <h3 id="result4">result</h3>                                     
+                    </div>
+                </div>
+            </div>
+
+        </body>
+</html>

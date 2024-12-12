@@ -1,0 +1,88 @@
+<html>
+
+ <head>
+    <script>
+
+        //create
+        var ages = [10, 20, 30, 40, 50];  //index starts from 0 onwards
+
+        //select
+        console.log(ages); //total all ages display
+
+        console.log(ages[2]); // specific age will display but starts from 0 onwards 
+
+        //insert
+
+        ages[5] = 60;
+        console.log(ages);
+
+        //update
+
+        ages[2] = 33;
+        console.log(ages);
+
+        //delete
+
+        delete ages[3];
+        console.log(ages);
+
+
+        //array of objects multiple students
+
+        var students = [
+            { name: 'a ', age: 20 },
+            { name: 'b', age: 21 },
+            { name: 'c', age: 22 },
+        ];
+        //print
+        console.log(students[1].age);
+        console.log(students[2].age);
+
+
+        //array functions
+
+        var nums = [10, 20, 30, 40, 50];
+        //delete and add at last
+        nums.pop();       //console.log(nums.pop(2));  console.log(nums.push(99));
+
+        nums.push(60);
+        ///delete and add at first
+        nums.shift();
+        nums.unshift(5);
+
+        //delete and add at any place
+        //index, no of elements (in brackets first one is index, and second is no of elements
+
+        nums.splice(2, 2);     //in index from 2(0,1,)unchi inka two elements display avuthai and remaining delet avuthai
+
+        nums.splice(2, 0, 25, 26);
+
+        //structure
+        //a.splicet(index,no of elements to delete , no of elements to add);
+        nums.splice(2, 2, 33, 44);
+
+
+        //existance check
+        console.log(nums.includes(20));        //in array includes means true or no includes means flase
+        console.log(nums.includes(90));
+
+        console.log(nums.indexOf(30));      // the position is 2
+        console.log(nums.indexOf(99));    //It returns the index of the first occurrence of the value, or -1 if the value is not found.
+
+        //subset
+        console.log(nums.slice(0, 3));   //(include,exclude) in index from 0 place to 3-1=2 upto
+
+        //reverse
+
+        console.log(nums.reverse());    //display reverse of index
+
+
+
+    </script>
+ </head>
+
+   <body>
+    <h1>arrays</h1>
+   </body>
+
+</html>
